@@ -4,9 +4,9 @@ backend:
     build:
       commands:
         - '# Execute Amplify CLI with the helper script'
-        #- amplifyPush --simple
-        - npm run build:$BUILD_ENV
-        - echo "TWITCH_CLIENT_ID=$TWITCH_CLIENT_ID" >> backend/.env 
+        - amplifyPush --simple
+        #- npm run build:$BUILD_ENV
+        #- echo "TWITCH_CLIENT_ID=$TWITCH_CLIENT_ID" >> backend/.env 
 frontend:
   phases:
     preBuild:
